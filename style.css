@@ -1,0 +1,441 @@
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: 1em;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+
+}
+
+/*
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content:stretch;
+      
+
+}
+
+header {
+    grid-column: 1 / 3;
+    text-align: center;
+    background-color: #110903;
+    
+}
+
+.lista {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.lista>a {
+    display: grid;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    color: goldenrod;
+    font-family: 'Nunito', sans-serif;
+    font-size:0.9em;
+
+}
+
+.lista a:hover {
+    text-decoration: underline;
+    color: goldenrod
+}
+
+.centro a {
+    display: flex;
+    place-content: center center;
+    text-decoration: none;
+    font-size: 2em;
+    color: goldenrod;
+    font-family: 'Splash', cursive;
+    text-align: center;
+
+}
+
+.box1 {
+    display: flex;
+    gap: 1rem;
+   /* border: 2px solid red;*/
+    justify-content: center;
+    height: 20vh;
+    justify-items: center;
+    align-items: center;
+    background-color: #110903;
+
+}
+
+.box2 {
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: goldenrod;
+    height: 70vh;
+   /* border: 2px solid red;*/
+}
+.box2 h1, h5 {
+    font-family: 'Martel', serif;
+}
+.box2 h1 {
+    font-size: 1.5em;
+}
+.box2 p {
+    width: 80%;
+    padding: 5px;
+    font-size: 0.8em;
+    text-align: center;
+}
+.box2 a {
+    margin: 10px;
+    padding: 5px;
+    text-decoration: none;
+    color: goldenrod;
+    font-size: 0.8em;
+    text-align:center;
+    border: 2px solid goldenrod;
+    border-radius: 5px;
+    width: fit-content;
+    
+}
+
+/*.box3 {
+    background-image: url(./img/cerveceria640x429.jpg);
+    background-position: center;
+    grid-column: 2 / 3;
+    object-fit: cover;
+    overflow: hidden;
+    border: 2px solid red;
+
+}*/
+.box3 {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+.box3 img {
+    width: 40vw;
+    height: 55vh;
+    border-radius: 15px;
+}
+
+.box5 {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;/*agregue direccion en lesta prueba de diseño*/
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: goldenrod;
+    background-color: #110903;
+    height: 70vh;
+   /* border: 2px solid red;*/
+}
+.box5 h2 {
+    font-size: 1.1em;
+    font-family: 'Martel', sans-serif;
+    
+}
+/*p que traslade*/
+.box5 p {
+    width: 80%;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.box4 {
+    grid-column: 1 / 2;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #110903;
+   /* border: 2px solid red;*/
+}
+/*.box4 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box4 .textcard {
+    /*display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    /*border: 2px solid goldenrod;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    width: 30vw;
+    background-color: black;
+    box-shadow: 0 0 10px black;
+    overflow: hidden;
+
+}
+.box4 .textcard h3 {
+    text-align:center;
+    font-size: 0.6em;
+    color: #ddd;
+}*/
+
+.box4 img {
+    /*img unica en box4*/
+    display: flex;
+    flex-direction: row;
+    width: 25vw;
+    /*border: 2px solid black;*/
+    border-radius: 15px;
+    /*box-shadow: 0 0 10px black;*/
+    margin: 30px;
+    object-fit: cover;
+    justify-content: space-around;
+
+}
+
+/*.box4 .textcard img {
+    width: 5rem;
+    padding: 5px;
+    text-align:center;
+    object-fit: cover;
+    align-self: center;
+    
+}
+
+.box4 .textcard p {
+    width: 25vw;
+    padding: 10px;
+    font-size:0.5em;
+    color: #ddd;
+    text-align: center;
+       
+}*/
+
+.box6 {
+    grid-column: 1 / 2;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;/*agrego direccion*/
+    align-items: center;
+    justify-content: center;/* cambio space-around*/
+    text-align: center;
+    color: goldenrod;
+    height: 70vh;
+   /* border: 2px solid red;*/
+    
+}
+.box6 h3 {
+    font-size: 1.1em;
+    font-family: 'Martel', serif;
+}
+.box6 p {
+    width: 80%;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.box7 {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+   /* border: 2px solid red;*/
+}
+/*.card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    border: 2px solid goldenrod;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 10px;
+    width: 8rem;
+    background-color: black;
+    box-shadow: 0 0 10px black;
+    overflow: hidden;
+}*/
+.box7 img {
+    width: 35vw;
+    height: 50vh;
+    align-self: center;
+    border-radius: 10px;
+}
+
+.box8 {
+    grid-column: 1 / 2;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    color: goldenrod;
+    font-family: 'Martel', serif;
+    background-color: #110903;
+    padding: 30px;
+   /* border: 2px solid red;*/
+
+}
+.box8 img {
+    width: 18vw;
+    border-radius: 10px;
+    padding: 5px;
+    
+}
+
+.box9 {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 65vh;
+    padding: 30px;
+    background-color: #110903;
+    /*border: 2px solid red;*/
+}
+.box9 h3 {
+    font-family: 'Martel', serif;
+    color: goldenrod;
+    font-size: 1.1em;
+    padding: 10px;
+    text-align: center;
+}
+.box9 p {
+    padding: 10px;
+    color: goldenrod;
+    text-align: center;
+    font-size: 0.8em;
+    
+}
+.box9 iframe {
+    width: 47.5%;
+    height: 55%;
+    border: 2px solid black; 
+    border-radius: 10px;
+    opacity: 0.8;
+    background-color:#110903;
+    background-blend-mode:darken;
+}
+
+.box10 {
+    grid-column: 1 / 3;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-content: space-around;
+    align-items: center;
+    padding: 50px;
+    height: 70vh;
+   /* border: 2px solid red;*/
+}
+.box10 h2 {
+    text-align: center;
+    padding: 20px;
+    color: goldenrod;
+    font-family: 'Martel',serif;
+    font-size: 1.1em;
+
+}
+.box10 div {
+    width: 50%;
+
+}
+.box10 textarea {
+    resize:none;
+    font-size: 0.8em;
+    
+}
+.box11 {
+    grid-column: 1 / 3;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 50px;
+    justify-content: center;
+    align-content:center;
+    align-items: center;
+    height: 60vh;
+    background-color: #110903;
+    /*border: 2px solid red;*/
+}
+.box11 h2 {
+    padding: 10px;
+    font-family: 'Martel', serif;
+    color: goldenrod;
+    text-align: center;
+    font-size: 1.1em;
+}
+.box11 div {
+    width: 50%;
+    padding: 10px;
+}
+.box11 div input {
+    font-size: 0.8em;
+    color: goldenrod;
+    border: none;
+    border-bottom: 1px solid goldenrod;
+    background-color: #110903;
+    margin-bottom: 5px;
+}
+.box11 a {
+    margin: 10px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: goldenrod;
+    font-size: 0.8em;
+    text-align:center;
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+    width: fit-content;
+}
+
+.box12 {
+    grid-column: 1 / 3;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: space-around;
+    align-content: center;
+    height: 30vh;
+    background-color: goldenrod;
+   /* border: 2px solid red;*/
+}
+.box12 div {
+    width: 70%;
+    justify-content: space-around;
+    align-items: center;
+    color: #110903;
+    font-size: 0.8em;
+   
+}
+
+.box12  p {
+    padding: 15px;
+}
+.box12 a img {
+    width: 2em;
+    
+}
